@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: KaushanScript-Regular
+font link: https://fonts.google.com/specimen/Kaushan+Script
+font author: Impallari Type
+font author site: www.impallari.com
+Slogan Font: KaushanScript-Regular.ttf
+
+icon designer: Hannah Strobel
+icon designer link: /Mylillian
+        
+{"bg-gradient-0":"#0D7CE9","bg-gradient-1":"#15CFF1","icon":"#ffffff","font":"#ffffff","slogan":"#ffffff"}
+      
