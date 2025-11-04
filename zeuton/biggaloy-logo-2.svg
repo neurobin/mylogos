@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f5576c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffa726;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Lightbulb/Idea Concept with Digital Elements -->
+  <g transform="translate(512, 512)">
+    <!-- Bulb glass -->
+    <circle cx="0" cy="-80" r="140" fill="url(#grad2)" opacity="0.9"/>
+    <path d="M -100,50 Q -100,80 -80,100 L -60,100 L -60,150 Q -60,170 -40,170 L 40,170 Q 60,170 60,150 L 60,100 L 80,100 Q 100,80 100,50 Z"
+          fill="url(#grad2)"/>
+
+    <!-- Filament - representing knowledge/learning path -->
+    <path d="M -40,-60 Q -40,-20 0,0 Q 40,-20 40,-60"
+          stroke="white" stroke-width="12" fill="none" opacity="0.8"/>
+    <line x1="0" y1="0" x2="0" y2="30" stroke="white" stroke-width="12" opacity="0.8"/>
+
+    <!-- Base threads -->
+    <rect x="-50" y="170" width="100" height="20" fill="url(#grad2)" rx="5"/>
+
+    <!-- Digital circuit-like elements around bulb -->
+    <circle cx="-180" cy="-80" r="18" fill="#f5576c"/>
+    <line x1="-162" y1="-80" x2="-140" y2="-80" stroke="#f5576c" stroke-width="8"/>
+
+    <circle cx="180" cy="-80" r="18" fill="#ffa726"/>
+    <line x1="162" y1="-80" x2="140" y2="-80" stroke="#ffa726" stroke-width="8"/>
+
+    <circle cx="0" cy="-260" r="18" fill="#f093fb"/>
+    <line x1="0" y1="-242" x2="0" y2="-220" stroke="#f093fb" stroke-width="8"/>
+
+    <!-- Small nodes representing connectivity -->
+    <circle cx="-120" cy="-180" r="12" fill="#f5576c" opacity="0.7"/>
+    <circle cx="120" cy="-180" r="12" fill="#ffa726" opacity="0.7"/>
+    <circle cx="-140" cy="20" r="12" fill="#f093fb" opacity="0.7"/>
+    <circle cx="140" cy="20" r="12" fill="#f093fb" opacity="0.7"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00c6ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0072ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Angular Z with Negative Space -->
+  <g transform="translate(200, 200)">
+    <!-- Outer shape -->
+    <path d="M -110,-90 L 110,-90 L 110,-50 L 30,-50 L 110,50 L 110,90 L -110,90 L -110,50 L -30,50 L -110,-50 Z"
+          fill="url(#grad3)"/>
+
+    <!-- Inner cutout for modern look -->
+    <path d="M -70,-50 L 10,-50 L -70,50 Z"
+          fill="white" opacity="0.15"/>
+  </g>
+</svg>

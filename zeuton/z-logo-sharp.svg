@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <!-- Gradients for the swirl petals -->
+    <linearGradient id="petal1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9db4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5a7bc4;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="petal2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7b9cff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4a5fb8;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="petal3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c7d5ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8fa5e0;stop-opacity:1" />
+    </linearGradient>
+
+    <radialGradient id="centerGrad">
+      <stop offset="0%" style="stop-color:#5a7bc4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4a5fb8;stop-opacity:1" />
+    </radialGradient>
+
+    <radialGradient id="dotGrad">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0284c7;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+
+  <g transform="translate(512, 512)">
+    <!-- Create 8 swirling petals forming a Z pattern -->
+
+    <!-- Petal 1 (top-right) - darker -->
+    <path d="M 0,0 Q 120,-80 180,-120 Q 200,-100 220,-60 Q 140,-40 80,-20 Q 40,-10 0,0 Z"
+          fill="url(#petal2)" opacity="1"/>
+
+    <!-- Petal 2 (right) - lighter -->
+    <path d="M 0,0 Q 80,20 140,40 Q 200,100 220,180 Q 180,160 120,120 Q 60,60 0,0 Z"
+          fill="url(#petal3)" opacity="0.9"/>
+
+    <!-- Petal 3 (bottom-right) - darker -->
+    <path d="M 0,0 Q 20,80 40,140 Q 100,200 180,220 Q 140,200 80,160 Q 20,100 0,0 Z"
+          fill="url(#petal2)" opacity="1"/>
+
+    <!-- Petal 4 (bottom) - lighter -->
+    <path d="M 0,0 Q -20,80 -40,140 Q -100,200 -180,220 Q -140,180 -80,120 Q -40,60 0,0 Z"
+          fill="url(#petal3)" opacity="0.9"/>
+
+    <!-- Petal 5 (bottom-left) - darker -->
+    <path d="M 0,0 Q -80,20 -140,40 Q -200,100 -220,180 Q -200,140 -160,100 Q -80,40 0,0 Z"
+          fill="url(#petal2)" opacity="1"/>
+
+    <!-- Petal 6 (left) - lighter -->
+    <path d="M 0,0 Q -80,-20 -140,-40 Q -200,-100 -220,-180 Q -180,-160 -120,-120 Q -60,-60 0,0 Z"
+          fill="url(#petal3)" opacity="0.9"/>
+
+    <!-- Petal 7 (top-left) - darker -->
+    <path d="M 0,0 Q -20,-80 -40,-140 Q -100,-200 -180,-220 Q -140,-200 -80,-160 Q -20,-100 0,0 Z"
+          fill="url(#petal2)" opacity="1"/>
+
+    <!-- Petal 8 (top) - lighter -->
+    <path d="M 0,0 Q 20,-80 40,-140 Q 100,-200 180,-220 Q 140,-180 80,-120 Q 40,-60 0,0 Z"
+          fill="url(#petal3)" opacity="0.9"/>
+
+    <!-- Central circle -->
+    <circle cx="0" cy="0" r="25" fill="url(#centerGrad)"/>
+
+    <!-- Decorative dots around the logo -->
+    <!-- Top right cluster -->
+    <circle cx="240" cy="-180" r="18" fill="url(#dotGrad)"/>
+    <circle cx="200" cy="-220" r="12" fill="url(#dotGrad)"/>
+    <circle cx="270" cy="-150" r="8" fill="url(#dotGrad)"/>
+
+    <!-- Right cluster -->
+    <circle cx="280" cy="0" r="16" fill="url(#dotGrad)"/>
+    <circle cx="310" cy="30" r="10" fill="url(#dotGrad)"/>
+
+    <!-- Bottom right cluster -->
+    <circle cx="240" cy="180" r="18" fill="url(#dotGrad)"/>
+    <circle cx="200" cy="220" r="12" fill="url(#dotGrad)"/>
+
+    <!-- Bottom left cluster -->
+    <circle cx="-240" cy="180" r="16" fill="url(#dotGrad)"/>
+    <circle cx="-200" cy="220" r="10" fill="url(#dotGrad)"/>
+    <circle cx="-270" cy="150" r="8" fill="url(#dotGrad)"/>
+
+    <!-- Left cluster -->
+    <circle cx="-280" cy="0" r="14" fill="url(#dotGrad)"/>
+    <circle cx="-310" cy="-30" r="9" fill="url(#dotGrad)"/>
+
+    <!-- Top left cluster -->
+    <circle cx="-240" cy="-180" r="18" fill="url(#dotGrad)"/>
+    <circle cx="-200" cy="-220" r="11" fill="url(#dotGrad)"/>
+
+    <!-- Top cluster -->
+    <circle cx="0" cy="-280" r="15" fill="url(#dotGrad)"/>
+    <circle cx="-30" cy="-310" r="8" fill="url(#dotGrad)"/>
+
+    <!-- Additional scattered dots for balance -->
+    <circle cx="160" cy="-90" r="10" fill="url(#dotGrad)"/>
+    <circle cx="120" cy="140" r="12" fill="url(#dotGrad)"/>
+    <circle cx="-160" cy="90" r="11" fill="url(#dotGrad)"/>
+    <circle cx="-120" cy="-140" r="9" fill="url(#dotGrad)"/>
+  </g>
+</svg>

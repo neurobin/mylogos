@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="grad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#13547a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#80d0c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#13547a;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="grad6b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+
+    <radialGradient id="nodeGrad6">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0284c7;stop-opacity:1" />
+    </radialGradient>
+
+    <radialGradient id="centerGrad6">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#80d0c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#13547a;stop-opacity:1" />
+    </radialGradient>
+
+    <filter id="glow6">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow6">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Orbital Learning System - Planet with Orbiting Knowledge Nodes -->
+  <g transform="translate(512, 512)">
+    <!-- Orbital paths (ellipses) -->
+    <ellipse cx="0" cy="0" rx="280" ry="280" fill="none" stroke="url(#grad6b)" stroke-width="3" opacity="0.3" stroke-dasharray="10,5"/>
+    <ellipse cx="0" cy="0" rx="200" ry="200" fill="none" stroke="url(#grad6b)" stroke-width="3" opacity="0.4" stroke-dasharray="10,5"/>
+    <ellipse cx="0" cy="0" rx="120" ry="120" fill="none" stroke="url(#grad6b)" stroke-width="3" opacity="0.5" stroke-dasharray="10,5"/>
+
+    <!-- Connection lines from center to orbiting nodes -->
+    <!-- Outer orbit -->
+    <line x1="0" y1="0" x2="0" y2="-280" stroke="url(#grad6b)" stroke-width="6" opacity="0.4" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="198" y2="-198" stroke="url(#grad6b)" stroke-width="6" opacity="0.4" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="280" y2="0" stroke="url(#grad6b)" stroke-width="6" opacity="0.4" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="198" y2="198" stroke="url(#grad6b)" stroke-width="6" opacity="0.4" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="0" y2="280" stroke="url(#grad6b)" stroke-width="6" opacity="0.4" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-198" y2="198" stroke="url(#grad6b)" stroke-width="6" opacity="0.4" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-280" y2="0" stroke="url(#grad6b)" stroke-width="6" opacity="0.4" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-198" y2="-198" stroke="url(#grad6b)" stroke-width="6" opacity="0.4" stroke-linecap="round"/>
+
+    <!-- Mid orbit -->
+    <line x1="0" y1="0" x2="0" y2="-200" stroke="url(#grad6b)" stroke-width="7" opacity="0.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="141" y2="-141" stroke="url(#grad6b)" stroke-width="7" opacity="0.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="200" y2="0" stroke="url(#grad6b)" stroke-width="7" opacity="0.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="141" y2="141" stroke="url(#grad6b)" stroke-width="7" opacity="0.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="0" y2="200" stroke="url(#grad6b)" stroke-width="7" opacity="0.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-141" y2="141" stroke="url(#grad6b)" stroke-width="7" opacity="0.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-200" y2="0" stroke="url(#grad6b)" stroke-width="7" opacity="0.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-141" y2="-141" stroke="url(#grad6b)" stroke-width="7" opacity="0.5" stroke-linecap="round"/>
+
+    <!-- Inner orbit -->
+    <line x1="0" y1="0" x2="0" y2="-120" stroke="url(#grad6b)" stroke-width="8" opacity="0.6" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="85" y2="-85" stroke="url(#grad6b)" stroke-width="8" opacity="0.6" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="120" y2="0" stroke="url(#grad6b)" stroke-width="8" opacity="0.6" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="85" y2="85" stroke="url(#grad6b)" stroke-width="8" opacity="0.6" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="0" y2="120" stroke="url(#grad6b)" stroke-width="8" opacity="0.6" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-85" y2="85" stroke="url(#grad6b)" stroke-width="8" opacity="0.6" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-120" y2="0" stroke="url(#grad6b)" stroke-width="8" opacity="0.6" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-85" y2="-85" stroke="url(#grad6b)" stroke-width="8" opacity="0.6" stroke-linecap="round"/>
+
+    <!-- Orbiting nodes - Outer ring -->
+    <circle cx="0" cy="-280" r="38" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="198" cy="-198" r="38" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="280" cy="0" r="38" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="198" cy="198" r="38" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="0" cy="280" r="38" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="-198" cy="198" r="38" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="-280" cy="0" r="38" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="-198" cy="-198" r="38" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+
+    <!-- Mid orbit nodes -->
+    <circle cx="0" cy="-200" r="35" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="141" cy="-141" r="35" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="200" cy="0" r="35" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="141" cy="141" r="35" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="0" cy="200" r="35" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="-141" cy="141" r="35" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="-200" cy="0" r="35" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="-141" cy="-141" r="35" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+
+    <!-- Inner orbit nodes -->
+    <circle cx="0" cy="-120" r="32" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="85" cy="-85" r="32" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="120" cy="0" r="32" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="85" cy="85" r="32" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="0" cy="120" r="32" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="-85" cy="85" r="32" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="-120" cy="0" r="32" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+    <circle cx="-85" cy="-85" r="32" fill="url(#nodeGrad6)" filter="url(#softGlow6)"/>
+
+    <!-- Central knowledge hub - large glowing sphere -->
+    <circle cx="0" cy="0" r="70" fill="url(#centerGrad6)" filter="url(#glow6)"/>
+
+    <!-- Add bright highlight on center -->
+    <circle cx="-15" cy="-15" r="25" fill="white" opacity="0.6"/>
+
+    <!-- Inner accent ring -->
+    <circle cx="0" cy="0" r="45" fill="none" stroke="white" stroke-width="2" opacity="0.5"/>
+  </g>
+</svg>

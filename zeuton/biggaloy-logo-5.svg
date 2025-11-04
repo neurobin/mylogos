@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+
+    <radialGradient id="nodeGrad5">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="30%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </radialGradient>
+
+    <radialGradient id="centerNode5">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="20%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#667eea;stop-opacity:1" />
+    </radialGradient>
+
+    <!-- Glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Hexagonal Knowledge Network -->
+  <g transform="translate(512, 512)">
+    <!-- Connection lines with gradient -->
+    <!-- Outer hexagon connections -->
+    <line x1="0" y1="-240" x2="208" y2="-120" stroke="url(#grad5)" stroke-width="10" opacity="0.5" stroke-linecap="round"/>
+    <line x1="208" y1="-120" x2="208" y2="120" stroke="url(#grad5)" stroke-width="10" opacity="0.5" stroke-linecap="round"/>
+    <line x1="208" y1="120" x2="0" y2="240" stroke="url(#grad5)" stroke-width="10" opacity="0.5" stroke-linecap="round"/>
+    <line x1="0" y1="240" x2="-208" y2="120" stroke="url(#grad5)" stroke-width="10" opacity="0.5" stroke-linecap="round"/>
+    <line x1="-208" y1="120" x2="-208" y2="-120" stroke="url(#grad5)" stroke-width="10" opacity="0.5" stroke-linecap="round"/>
+    <line x1="-208" y1="-120" x2="0" y2="-240" stroke="url(#grad5)" stroke-width="10" opacity="0.5" stroke-linecap="round"/>
+
+    <!-- Mid hexagon connections -->
+    <line x1="0" y1="-140" x2="121" y2="-70" stroke="url(#grad5)" stroke-width="10" opacity="0.6" stroke-linecap="round"/>
+    <line x1="121" y1="-70" x2="121" y2="70" stroke="url(#grad5)" stroke-width="10" opacity="0.6" stroke-linecap="round"/>
+    <line x1="121" y1="70" x2="0" y2="140" stroke="url(#grad5)" stroke-width="10" opacity="0.6" stroke-linecap="round"/>
+    <line x1="0" y1="140" x2="-121" y2="70" stroke="url(#grad5)" stroke-width="10" opacity="0.6" stroke-linecap="round"/>
+    <line x1="-121" y1="70" x2="-121" y2="-70" stroke="url(#grad5)" stroke-width="10" opacity="0.6" stroke-linecap="round"/>
+    <line x1="-121" y1="-70" x2="0" y2="-140" stroke="url(#grad5)" stroke-width="10" opacity="0.6" stroke-linecap="round"/>
+
+    <!-- Radial connections from center to mid -->
+    <line x1="0" y1="0" x2="0" y2="-140" stroke="url(#grad5)" stroke-width="10" opacity="0.7" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="121" y2="-70" stroke="url(#grad5)" stroke-width="10" opacity="0.7" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="121" y2="70" stroke="url(#grad5)" stroke-width="10" opacity="0.7" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="0" y2="140" stroke="url(#grad5)" stroke-width="10" opacity="0.7" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-121" y2="70" stroke="url(#grad5)" stroke-width="10" opacity="0.7" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-121" y2="-70" stroke="url(#grad5)" stroke-width="10" opacity="0.7" stroke-linecap="round"/>
+
+    <!-- Connections from mid to outer -->
+    <line x1="0" y1="-140" x2="0" y2="-240" stroke="url(#grad5)" stroke-width="8" opacity="0.4" stroke-linecap="round"/>
+    <line x1="121" y1="-70" x2="208" y2="-120" stroke="url(#grad5)" stroke-width="8" opacity="0.4" stroke-linecap="round"/>
+    <line x1="121" y1="70" x2="208" y2="120" stroke="url(#grad5)" stroke-width="8" opacity="0.4" stroke-linecap="round"/>
+    <line x1="0" y1="140" x2="0" y2="240" stroke="url(#grad5)" stroke-width="8" opacity="0.4" stroke-linecap="round"/>
+    <line x1="-121" y1="70" x2="-208" y2="120" stroke="url(#grad5)" stroke-width="8" opacity="0.4" stroke-linecap="round"/>
+    <line x1="-121" y1="-70" x2="-208" y2="-120" stroke="url(#grad5)" stroke-width="8" opacity="0.4" stroke-linecap="round"/>
+
+    <!-- Nodes - Outer ring -->
+    <circle cx="0" cy="-240" r="45" fill="url(#nodeGrad5)" filter="url(#softGlow)"/>
+    <circle cx="208" cy="-120" r="45" fill="url(#nodeGrad5)" filter="url(#softGlow)"/>
+    <circle cx="208" cy="120" r="45" fill="url(#nodeGrad5)" filter="url(#softGlow)"/>
+    <circle cx="0" cy="240" r="45" fill="url(#nodeGrad5)" filter="url(#softGlow)"/>
+    <circle cx="-208" cy="120" r="45" fill="url(#nodeGrad5)" filter="url(#softGlow)"/>
+    <circle cx="-208" cy="-120" r="45" fill="url(#nodeGrad5)" filter="url(#softGlow)"/>
+
+    <!-- Nodes - Mid ring -->
+    <circle cx="0" cy="-140" r="38" fill="url(#nodeGrad5)" filter="url(#softGlow)"/>
+    <circle cx="121" cy="-70" r="38" fill="url(#nodeGrad5)" filter="url(#softGlow)"/>
+    <circle cx="121" cy="70" r="38" fill="url(#nodeGrad5)" filter="url(#softGlow)"/>
+    <circle cx="0" cy="140" r="38" fill="url(#nodeGrad5)" filter="url(#softGlow)"/>
+    <circle cx="-121" cy="70" r="38" fill="url(#nodeGrad5)" filter="url(#softGlow)"/>
+    <circle cx="-121" cy="-70" r="38" fill="url(#nodeGrad5)" filter="url(#softGlow)"/>
+
+    <!-- Center hub - largest and brightest -->
+    <circle cx="0" cy="0" r="60" fill="url(#centerNode5)" filter="url(#glow)"/>
+
+    <!-- Add subtle accent dots in the outer nodes -->
+    <circle cx="0" cy="-240" r="12" fill="white" opacity="0.8"/>
+    <circle cx="208" cy="-120" r="12" fill="white" opacity="0.8"/>
+    <circle cx="208" cy="120" r="12" fill="white" opacity="0.8"/>
+    <circle cx="0" cy="240" r="12" fill="white" opacity="0.8"/>
+    <circle cx="-208" cy="120" r="12" fill="white" opacity="0.8"/>
+    <circle cx="-208" cy="-120" r="12" fill="white" opacity="0.8"/>
+  </g>
+</svg>
